@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(42, 36, 36);
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+}
+#name{
+    font-family: "Sevillana", cursive;
+    font-size: 50px;
+    color: rgb(240, 240, 239)
+}
+.util1{ 
+    background-color: rgba(0, 0, 0);
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    justify-content: center;
+    background-color: rgb(42, 36, 36);
+    color: white;
+    position: fixed;
+    bottom:0;
+    right:0;
+    left:0;
+}
+#progressbar{
+    width: 1000px;
+}
+
+.body{
+    margin-top: 120px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.song_entries{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#song1,#song2,#song3,#song4,#song5,#song6,#song7,#song8,#song9,#song10,#song11{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#song1,#song2,#song3,#song4,#song5,#song6,#song7,#song8,#song9,#song10,#song11:hover{
+    cursor: pointer;
+}
+#gif{
+    position: absolute;     
+    left:17vw;
+    width:90px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#song_name_display{
+    position:absolute;
+    left:23vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+#cov1,#cov2,#cov3,#cov4,#cov5,#cov6,#cov7,#cov8,#cov9,#cov10,#cov11{
+    width:200px;
+}
